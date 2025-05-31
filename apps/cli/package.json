@@ -1,0 +1,19 @@
+{
+	"name": "cli",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.ts",
+	"scripts": {
+		"start": "tsx index.ts",
+		"dev": "tsx watch index.ts",
+		"test": "vitest run",
+		"test:watch": "vitest watch"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"packageManager": "pnpm@10.11.0",
+	"dependencies": {
+		"greetings": "workspace:*"
+	}
+}
