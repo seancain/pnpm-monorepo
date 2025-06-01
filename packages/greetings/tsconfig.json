@@ -1,8 +1,7 @@
 {
-	"extends": "../../tsconfig.json",
+	"extends": "../../tsconfig.base.jsonc",
 	"compilerOptions": {
 		"outDir": "dist",
-		"declaration": true,
 		"rootDir": "."
 	},
 	"include": ["*.ts"],

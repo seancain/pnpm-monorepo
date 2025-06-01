@@ -37,11 +37,7 @@ importers:
         specifier: workspace:*
         version: link:../../packages/greetings
 
-  packages/greetings:
-    devDependencies:
-      vitest:
-        specifier: ^3.1.4
-        version: 3.1.4(@types/node@22.15.29)(tsx@4.19.4)
+  packages/greetings: {}
 
 packages:
 

@@ -3,22 +3,21 @@
 	"version": "1.0.0",
 	"description": "A simple greeting CLI",
 	"main": "dist/index.js",
+	"type": "module",
 	"bin": {
 		"greet-cli": "dist/index.js"
 	},
 	"scripts": {
-		"build": "tsc",
+		"build": "rm -rf dist && tsc",
 		"start": "tsx index.ts",
-		"dev": "tsx watch index.ts",
-		"test": "vitest run",
-		"test:watch": "vitest watch"
+		"dev": "tsx watch index.ts"
 	},
 	"keywords": ["cli", "greetings"],
 	"author": "",
 	"license": "ISC",
 	"packageManager": "pnpm@10.11.0",
+	"files": ["dist", "package.json"],
 	"dependencies": {
 		"greetings": "workspace:*"
-	},
-	"files": ["dist/index.js"]
+	}
 }

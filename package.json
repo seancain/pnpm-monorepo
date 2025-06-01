@@ -4,8 +4,8 @@
 	"description": "",
 	"scripts": {
 		"dev": "pnpm --filter cli dev",
-		"build": "pnpm -r build && rm -rf dist && pnpm --filter cli deploy dist",
-		"start": "pnpm build && node dist/dist/index.js",
+		"build": "pnpm -r build && rm -rf dist && pnpm --filter cli deploy dist/cli",
+		"start": "pnpm build && node dist/cli/dist/index.js",
 		"test": "vitest run --reporter verbose",
 		"test:watch": "vitest watch",
 		"test:coverage": "vitest run --coverage",

@@ -13,6 +13,6 @@ export function handleCliArgs(args: string[]): string {
 }
 
 // CLI execution - only runs when this file is executed directly
-if (require.main === module) {
+if (import.meta.url === `file://${process.argv[1]}`) {
 	console.log(handleCliArgs(process.argv));
 }
